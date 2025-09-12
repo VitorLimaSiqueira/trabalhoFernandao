@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../dados/database');
+const db = require('../dados/database.js');
 
 // GET - Listar todos os alunos
 router.get('/', (req, res) => {
