@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const alunoRoutes = require('./routes/alunos');
+const alunoRoutes = require('./routers/alunos.js');
 const logMiddleware = require('./middleware/logMiddleware');
 
 const app = express();
