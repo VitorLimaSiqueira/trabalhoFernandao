@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const alunoRoutes = require('./routers/alunos.js');
+const alunoRoutes = require('./routers/alunos');
 const logMiddleware = require('./middleware/logMiddleware');
 
 const app = express();
@@ -26,5 +26,5 @@ app.get('/', (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
+  console.log(`Servidor rodando na porta http://localhost:${PORT}`);
 });
